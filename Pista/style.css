@@ -1,0 +1,141 @@
+
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #7AA874;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.navbar__brand {
+  width: 100px;
+}
+
+.navbar__logo {
+  width: 100px;
+}
+
+.button__primary {
+  background-image: linear-gradient(
+    to right,
+    #7AA874 0%,
+    #ABC4AA 50%,
+    #7AA874 100%,
+    );
+    color: #539165;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button__primary :hover {
+  border: 2px solid  #FF6767;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.food__card {
+  background-color: #F9F5EB;
+padding: 10px;
+}
+
+.food__card__image__container {
+  width: 100%;
+}
+
+.food__image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.explore__menu__text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+}
+
+footer {
+  background-color: grey;
+}
+
+@media (min-width: 768px) {
+  .explore__menu__list{
+    gap: 30px;
+  }
+
+  .explore__menu__container {
+    position: relative;
+  }
+
+.explore__menu__gradient__bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(
+     to right,
+     #7AA874 0%,
+     #ABC4AA 51%,
+     #7AA874 100%,
+     );
+     z-index: -3;
+     transform: skewX(-5deg);
+}
+
+#bbq__card {
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+
+ .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .explore__menu__list {
+    display: flex;
+    max-width: inherit;
+    margin: inherit;
+margin-top: 30px;
+  gap: 80px;
+  }
+
+.navbar__brand {
+  width: 200px;
+}
+  .button__primary {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .explore__menu__text {
+    font-size: 45px;
+  }
+}
